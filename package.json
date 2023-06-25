@@ -2,11 +2,14 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rojahno.github.io/future-of-fintech-V2023/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/jest": "^29.5.2",
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "eslint": "8.31.0",
-    "eslint-config-next": "13.1.1"
+    "eslint-config-next": "13.1.1",
+    "gh-pages": "^5.0.0"
   }
 }

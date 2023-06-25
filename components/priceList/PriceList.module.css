@@ -3,8 +3,8 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  border-top:1px solid #939598;
-  border-bottom:1px solid #939598;
+  border-top: 1px solid #939598;
+  border-bottom: 1px solid #939598;
 }
 
 #price_list > :nth-child(even) {

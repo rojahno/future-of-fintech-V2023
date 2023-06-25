@@ -8,7 +8,7 @@ import consumption from "../../../data/consumption.json";
 import { format } from "date-fns";
 
 const ChartDataFromFile = dynamic(
-  () => import("../../charts/ChartDataFromFile"),
+  () => import("../../charts/LineChartSingleLine"),
   {
     ssr: false,
   }
@@ -66,7 +66,6 @@ export const Overview = () => {
 
   useEffect(() => {
     convertedDataForWeek();
-    //Runs only on the first render
   }, []);
 
   return (

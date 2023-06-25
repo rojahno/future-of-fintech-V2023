@@ -1,7 +1,5 @@
 import styles from "./PriceList.module.css";
-import { useState, useEffect } from "react";
 
-// Reading data directly from a JSON file
 import data from "../../data/averagePrice.json";
 
 interface PriceListProps {
@@ -11,8 +9,6 @@ interface PriceListProps {
 export const PriceList = (props: PriceListProps) => {
   return (
     <div id={styles.price_overview}>
-      {/* <h2 className={styles.tabel_title}>{props.currentYear}</h2> */}
-
       <ul id={styles.price_list}>
         <div className={styles.price_items}>
           <h3 className={styles.price_overview_title}>{"Måned"}</h3>

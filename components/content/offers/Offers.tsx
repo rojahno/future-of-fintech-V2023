@@ -177,7 +177,7 @@ export const Offers = () => {
     return (
       <div id={styles.offers}>
         <h1 id={styles.title}>Strømavtaler</h1>
-        <p>Hva er ditt årlige forbruk i kWh?</p>
+        <p>Hva er ditt månedlige forbruk i kWh?</p>
         <div>
           <input
             className={styles.input}
