@@ -39,6 +39,7 @@ https://rojahno.github.io/future-of-fintech-V2023
   Offers page:
   - [ ] Add a tooltip you can hover over for each of the deal types that explains them.
   - [ ] Add the ability to compare deals.
+  - [ ] Created a prettier box around the input section.
 
   Overall:
   - [ ] Make the site fully responsive.
