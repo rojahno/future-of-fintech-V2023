@@ -1,0 +1,7 @@
+.generalLayoutContainer {
+  min-height: 100vh;
+  background-color: #f2f4f5;
+  display: grid;
+  gap: 0em;
+  grid-template-rows: [header] auto [main-content] 1fr [footer] auto;
+}

@@ -31,7 +31,10 @@ ol[role="list"] {
 html:focus-within {
   scroll-behavior: smooth;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -73,4 +76,15 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

@@ -1,0 +1,27 @@
+#price_list {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top:1px solid #939598;
+  border-bottom:1px solid #939598;
+}
+
+#price_list > :nth-child(even) {
+  background-color: #00000030;
+}
+
+.price_items {
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+#price_overview {
+  width: 100%;
+}
+.price_overview_title {
+  color: #939598;
+}

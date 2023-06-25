@@ -1,0 +1,16 @@
+.footerContainer {
+  grid-row-start: footer;
+  background-color: #063342;
+  height: 4em;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18.5px;
+  font-size: 13px;
+}
+.footerText {
+  margin: 0;
+  padding: 0;
+}

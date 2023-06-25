@@ -1,28 +1,26 @@
-import dynamic from "next/dynamic";
-import { Header } from "../components/Header";
-
-// We have to import the chart this way because it creates some errors if not.
-// You have to do the same if you want to import a component that uses the Rechart library.
-const ChartDataFromFile = dynamic(
-  () => import("../components/ChartDataFromFile"),
-  {
-    ssr: false,
-  }
-);
-const ChartDataFromAPI = dynamic(
-  () => import("../components/ChartDataFromAPI"),
-  {
-    ssr: false,
-  }
-);
+import { LandingPage } from "../components/content/landing/LandingPage";
+import { Header } from "../components/layout/header/Header.jsx";
+import Head from "next/head";
+import { Footer } from "../components/layout/footer/Footer";
+import { MainContent } from "../components/layout/MainContent";
+import { PageLayout } from "../components/layout/PageLayout";
 
 // This is the page that will be rendered at the root of your site.
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <ChartDataFromFile />
-      <ChartDataFromAPI />
-    </main>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Electrify</title>
+      </Head>
+
+      {/* <Header /> */}
+      <main>
+        <PageLayout>
+          <LandingPage />
+        </PageLayout>
+      </main>
+      {/* <Footer /> */}
+    </>
   );
 }

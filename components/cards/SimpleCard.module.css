@@ -1,0 +1,17 @@
+.simple_card {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10px;
+  background-color: #fff;
+  /* color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-top: #425b67 0.5rem solid;
+  color: #425b67;
+}
+
+.simple_card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
