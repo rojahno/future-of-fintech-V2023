@@ -1,46 +1,45 @@
-# How to run this application
+## Task description
 
-**To use this repository you need to have [Node](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed. We also expect that you have some basic knowledge in using the terminal**
+  I attempted to create a solution that simplifies the process of selecting an electricity provider for customers. I developed two pages for this purpose.
+ 
+  The first page serves as an overview, providing customers with valuable information regarding their energy consumption. It visually represents their consumption data and
+  categorizes it into weekly, monthly, and yearly segments. This segmentation aims to facilitate customer understanding of their consumption patterns and associated costs.
+ 
+  On the second page, customers can explore the various offers available from different electricity providers. This page presents details such as deal types, contract durations,
+  monthly prices, price per kilowatt-hour (kWh), and visual representations of average prices from previous years. These visualizations enable customers to compare the current
+  offers with historical pricing trends, helping them assess if they are securing a favorable deal in comparison to past prices.
 
-First you need to clone this repository by writing the following command <code>git clone https://github.com/stacc/future-of-fintech-V2023.git</code> you then go into the folder by writing <code>cd future-of-fintech-V2023</code>. then you can install the packages required with <code>npm install</code>
 
-You can now follow the basic guide provided by the framework we use, [NextJS](https://nextjs.org/)
+## Website
+https://rojahno.github.io/future-of-fintech-V2023
 
-\_\_
+## How to run
+  Package all dependencies
+  
+  ```bash
+  npm install
+  ```
+  Run the program
+  ```bash
+  npm run dev
+  ```
+  Open http://localhost:3000 with your browser to see the result.
 
-\_\_
+## Comments
+  I was not able to encorporate all the functionality that I wanted. Below is a list of some of the elements that I would have liked to include. 
 
-## Getting Started
+  Overview page:
+  - [ ] Change between week, month, and year on the graph.
+  - [ ] Change between consumption and price on the graph.
+  - [ ] Incorporate more color into the design.
+  - [ ] Change between different years on the average price table.
+  - [ ] Compare price paid with other previous deals.
+  - [ ] Add real numbers to the consumption section.
 
-First, run the development server:
+  Offers page:
+  - [ ] Add a tooltip you can hover over for each of the deal types that explains them.
+  - [ ] Add the ability to compare deals.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  Overall:
+  - [ ] Make the site fully responsive.
+  - [ ] Add a path-navigation below the header.
